@@ -1,0 +1,15 @@
+<Solution>
+  <Folder Name="/Source/" />
+  <Folder Name="/Source/Core/">
+    <Project Path="RutaLimpiaBackend.Core.Application/RutaLimpiaBackend.Core.Application.csproj" />
+    <Project Path="RutaLimpiaBackend.Core.Domain/RutaLimpiaBackend.Core.Domain.csproj" />
+  </Folder>
+  <Folder Name="/Source/Infrastructure/">
+    <Project Path="RutaLimpiaBackend.Infrastructure.Identity/RutaLimpiaBackend.Infrastructure.Identity.csproj" />
+    <Project Path="RutaLimpiaBackend.Infrastructure.Persistence/RutaLimpiaBackend.Infrastructure.Persistence.csproj" />
+    <Project Path="RutaLimpiaBackend.Infrastructure.Shared/RutaLimpiaBackend.Infrastructure.Shared.csproj" />
+  </Folder>
+  <Folder Name="/Source/Presentation/">
+    <Project Path="WebAPI/WebAPI.csproj" />
+  </Folder>
+</Solution>
