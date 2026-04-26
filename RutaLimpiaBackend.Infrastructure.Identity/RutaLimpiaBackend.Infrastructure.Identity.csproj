@@ -12,4 +12,8 @@
 		<PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="10.0.3" />
 	</ItemGroup>
 	
+	<ItemGroup>
+	  <ProjectReference Include="..\RutaLimpiaBackend.Core.Domain\RutaLimpiaBackend.Core.Domain.csproj" />
+	</ItemGroup>
+	
 </Project>
