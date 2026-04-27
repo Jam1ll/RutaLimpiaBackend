@@ -18,4 +18,7 @@
 		<PackageReference Include="Microsoft.Extensions.Caching.StackExchangeRedis" Version="10.0.2" />
 		<PackageReference Include="Newtonsoft.Json" Version="13.0.4" />
 	</ItemGroup>
+	<ItemGroup>
+	  <ProjectReference Include="..\RutaLimpiaBackend.Core.Domain\RutaLimpiaBackend.Core.Domain.csproj" />
+	</ItemGroup>
 </Project>
