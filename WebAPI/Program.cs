@@ -5,12 +5,14 @@ using RutaLimpiaBackend.Infrastructure.Identity.Entities;
 using RutaLimpiaBackend.Infrastructure.Identity.Seeds;
 using RutaLimpiaBackend.Infrastructure.Persistence;
 using RutaLimpiaBackend.Infrastructure.Persistence.Contexts;
+using RutaLimpiaBackend.Infrastructure.Shared;
 using WebAPI.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddApplicationLayer();
 builder.Services.AddPersistenceInfrastructure(builder.Configuration);
+builder.Services.AddSharedInfrastructure(builder.Configuration);
 builder.Services.AddApiVersioningExtension();
 builder.Services.AddIdentityInfrastructure(builder.Configuration);
 

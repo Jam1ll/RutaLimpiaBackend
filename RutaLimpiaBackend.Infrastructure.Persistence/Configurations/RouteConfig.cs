@@ -20,7 +20,7 @@ namespace RutaLimpiaBackend.Infrastructure.Persistence.Configurations
             #region RELATIONSHIPS
             builder.HasOne(x => x.Sector)
                    .WithMany()
-                   .HasForeignKey(x => x.Sector)
+                   .HasForeignKey(x => x.SectorId)
                    .OnDelete(DeleteBehavior.Restrict);
             #endregion
         }

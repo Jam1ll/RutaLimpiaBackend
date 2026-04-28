@@ -61,7 +61,7 @@ namespace RutaLimpiaBackend.Infrastructure.Identity.Services
                     UserName = payload.Email ?? "not_found_userName",
                     Email = payload.Email,
                     EmailConfirmed = true,
-                    SectorId = "not_found_sector"
+                    SectorId = Guid.Empty,
                 };
 
                 var result = await _userManager.CreateAsync(user);
