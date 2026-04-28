@@ -5,7 +5,7 @@ namespace RutaLimpiaBackend.Core.Application.Features.TruckFeatures.Commands.Upd
     public class UpdateTruckCommand : IUpdateRequest
     {
         public Guid Id { get; set; }
-        public Guid IdRoute { get; set; }
+        public Guid RouteId { get; set; }
         public required string LicensePlate { get; set; }
         public decimal Capacity { get; set; }
         public bool IsActive { get; set; }

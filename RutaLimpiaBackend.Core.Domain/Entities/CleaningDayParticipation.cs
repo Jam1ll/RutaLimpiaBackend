@@ -7,5 +7,8 @@ namespace RutaLimpiaBackend.Core.Domain.Entities
         public required string Comment { get; set; }
         public Guid CleaningDayId { get; set; }
         public Guid UserId { get; set; }
+
+        //nav props
+        public CleaningDay? CleaningDay { get; set; }
     }
 }

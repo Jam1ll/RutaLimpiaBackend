@@ -5,7 +5,7 @@ namespace RutaLimpiaBackend.Core.Application.Features.CollectionScheduleFeatures
     public class UpdateCollectionScheduleCommand : IUpdateRequest
     {
         public Guid Id { get; set; }
-        public Guid IdRoute { get; set; }
+        public Guid RouteId { get; set; }
         public required string Weekday { get; set; }
         public TimeOnly StartTime { get; set; }
         public TimeOnly EndTime { get; set; }

@@ -16,7 +16,7 @@ namespace RutaLimpiaBackend.Infrastructure.Identity.Seeds
                 User user1 = new()
                 {
                     Name = "Pedro Bonilla",
-                    IdSector = "b16c35bf-a6d8-46df-8574-167a79336b86",
+                    SectorId = "b16c35bf-a6d8-46df-8574-167a79336b86",
                     Email = email,
                     EmailConfirmed = true,
                     PhoneNumber = "8296083980",

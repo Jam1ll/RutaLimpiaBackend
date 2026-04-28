@@ -16,7 +16,7 @@ namespace RutaLimpiaBackend.Infrastructure.Identity.Seeds
                 User user1 = new()
                 {
                     Name = "John Marx",
-                    IdSector = "675d3eea-5d43-4cd0-8012-cf71b9164534",
+                    SectorId = "675d3eea-5d43-4cd0-8012-cf71b9164534",
                     Email = email,
                     EmailConfirmed = true,
                     PhoneNumber = "8099080980",

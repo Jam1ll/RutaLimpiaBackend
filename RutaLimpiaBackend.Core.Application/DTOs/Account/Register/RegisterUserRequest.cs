@@ -1,0 +1,15 @@
+﻿namespace RutaLimpiaBackend.Core.Application.DTOs.Account.Register
+{
+    public class RegisterUserRequest
+    {
+        public required string Name { get; set; }
+        public Guid SectorId { get; set; }
+        public required string Email { get; set; }
+        public required string Password { get; set; }
+        public required string PhoneNumber { get; set; }
+        public string? PhotoUrl { get; set; }
+        public DateTime CreatedAt { get; set; }
+        public required string Role { get; set; }
+        public bool IsActive { get; set; }
+    }
+}
