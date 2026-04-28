@@ -5,7 +5,7 @@ namespace RutaLimpiaBackend.Core.Domain.Entities
 {
     public class Route : AuditableBaseEntity
     {
-        public Guid IdSector { get; set; }
+        public Guid SectorId { get; set; }
         public required string Number { get; set; }
         public bool IsActive { get; set; }
 
