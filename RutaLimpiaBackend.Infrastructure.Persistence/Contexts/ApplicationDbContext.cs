@@ -10,7 +10,7 @@ namespace RutaLimpiaBackend.Infrastructure.Persistence.Contexts
     {
         private readonly IDateTimeService _dateTimeService;
 
-        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options, IDateTimeService dateTimeService, ICurrentUserService currentUserService) : base(options)
+        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options, IDateTimeService dateTimeService) : base(options)
         {
             ChangeTracker.QueryTrackingBehavior = QueryTrackingBehavior.NoTracking;
             _dateTimeService = dateTimeService;
@@ -22,6 +22,11 @@ namespace RutaLimpiaBackend.Infrastructure.Persistence.Contexts
         public DbSet<Route> Routes { get; set; }
         public DbSet<Truck> Trucks { get; set; }
         public DbSet<CollectionSchedule> CollectionSchedules { get; set; }
+        public DbSet<Report> Reports { get; set; }
+        public DbSet<CleaningDay> CleaningDays { get; set; }
+        public DbSet<CleaningDayParticipation> CleaningDayParticipations { get; set; }
+        public DbSet<Notification> Notifications { get; set; }
+        public DbSet<WeatherAlert> WeatherAlerts { get; set; }
 
         #endregion
 

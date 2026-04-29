@@ -4,7 +4,7 @@ namespace RutaLimpiaBackend.Core.Domain.Entities
 {
     public class CollectionSchedule : AuditableBaseEntity
     {
-        public Guid IdRoute { get; set; }
+        public Guid RouteId { get; set; }
         public required string Weekday { get; set; }
         public TimeOnly StartTime { get; set; }
         public TimeOnly EndTime { get; set; }

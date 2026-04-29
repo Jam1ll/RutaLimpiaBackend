@@ -3,7 +3,7 @@ using MapsterMapper;
 using RutaLimpiaBackend.Core.Application.DTOs;
 using RutaLimpiaBackend.Core.Application.Features.Common.CommonQueries;
 using RutaLimpiaBackend.Core.Application.Interfaces;
-using RutaLimpiaBackend.Core.Application.Specifications.SectorSpecification;
+using RutaLimpiaBackend.Core.Application.Specifications.SectorSpecifications;
 using RutaLimpiaBackend.Core.Domain.Entities;
 
 namespace RutaLimpiaBackend.Core.Application.Features.SectorFeatures.Queries.GetAll

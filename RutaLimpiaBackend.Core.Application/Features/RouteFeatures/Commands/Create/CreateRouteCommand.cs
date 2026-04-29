@@ -5,7 +5,7 @@ namespace RutaLimpiaBackend.Core.Application.Features.RouteFeatures.Commands.Cre
 {
     public class CreateRouteCommand : IRequest<Response<Guid>>
     {
-        public Guid IdSector { get; set; }
+        public Guid SectorId { get; set; }
         public required string Number { get; set; }
         public bool IsActive { get; set; }
     }

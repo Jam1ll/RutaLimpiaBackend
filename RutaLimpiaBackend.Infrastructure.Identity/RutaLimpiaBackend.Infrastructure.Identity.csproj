@@ -10,9 +10,11 @@
 		<PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="10.0.3" />
 		<PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="10.0.3" />
 		<PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="10.0.3" />
+		<PackageReference Include="Google.Apis.Auth" Version="1.73.0" />
 	</ItemGroup>
 	
 	<ItemGroup>
+	  <ProjectReference Include="..\RutaLimpiaBackend.Core.Application\RutaLimpiaBackend.Core.Application.csproj" />
 	  <ProjectReference Include="..\RutaLimpiaBackend.Core.Domain\RutaLimpiaBackend.Core.Domain.csproj" />
 	</ItemGroup>
 	

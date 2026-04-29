@@ -5,7 +5,7 @@ namespace RutaLimpiaBackend.Core.Application.Features.TruckFeatures.Commands.Cre
 {
     public class CreateTruckCommand : IRequest<Response<Guid>>
     {
-        public Guid IdRoute { get; set; }
+        public Guid RouteId { get; set; }
         public required string LicensePlate { get; set; }
         public decimal Capacity { get; set; }
         public bool IsActive { get; set; }

@@ -16,7 +16,7 @@ namespace RutaLimpiaBackend.Infrastructure.Identity.Seeds
                 User user1 = new()
                 {
                     Name = "Juan Perez",
-                    IdSector = "5ecaf88f-aa0b-48a9-b2af-ae08f976f43d",
+                    SectorId = Guid.Empty,
                     Email = email,
                     EmailConfirmed = true,
                     PhoneNumber = "8099080980",

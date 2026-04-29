@@ -6,8 +6,34 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+	<ItemGroup>
+		<PackageReference Include="Ardalis.ApiEndpoints" Version="4.1.0" />
+		<PackageReference Include="Asp.Versioning.Http" Version="8.1.1" />
+		<PackageReference Include="Asp.Versioning.Mvc" Version="8.1.1" />
+		<PackageReference Include="Mapster" Version="7.4.0" />
+		<PackageReference Include="Mapster.DependencyInjection" Version="1.0.1" />
+		<PackageReference Include="MediatR" Version="14.0.0" />
+		<PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.0" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="10.0.3">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+		<PackageReference Include="Swashbuckle.AspNetCore.Annotations" Version="6.6.2" />
+		<PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="6.6.2" />
+		<OpenApiReference Include="openapi.json" />
+	</ItemGroup>
+
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.0.5" />
+    <ProjectReference Include="..\RutaLimpiaBackend.Core.Application\RutaLimpiaBackend.Core.Application.csproj" />
+    <ProjectReference Include="..\RutaLimpiaBackend.Core.Domain\RutaLimpiaBackend.Core.Domain.csproj" />
+    <ProjectReference Include="..\RutaLimpiaBackend.Infrastructure.Identity\RutaLimpiaBackend.Infrastructure.Identity.csproj" />
+    <ProjectReference Include="..\RutaLimpiaBackend.Infrastructure.Persistence\RutaLimpiaBackend.Infrastructure.Persistence.csproj" />
+    <ProjectReference Include="..\RutaLimpiaBackend.Infrastructure.Shared\RutaLimpiaBackend.Infrastructure.Shared.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RutaLimpiaBackend.Core.Application\RutaLimpiaBackend.Core.Application.csproj" />
   </ItemGroup>
 
 </Project>

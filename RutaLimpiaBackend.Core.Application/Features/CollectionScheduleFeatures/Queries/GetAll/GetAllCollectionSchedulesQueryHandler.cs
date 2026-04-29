@@ -3,7 +3,6 @@ using MapsterMapper;
 using RutaLimpiaBackend.Core.Application.DTOs;
 using RutaLimpiaBackend.Core.Application.Features.Common.CommonQueries;
 using RutaLimpiaBackend.Core.Application.Interfaces;
-using RutaLimpiaBackend.Core.Application.Specifications.CollectionScheduleSpecification;
 using RutaLimpiaBackend.Core.Application.Specifications.CollectionScheduleSpecifications;
 using RutaLimpiaBackend.Core.Domain.Entities;
 

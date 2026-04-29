@@ -6,7 +6,7 @@ namespace RutaLimpiaBackend.Core.Application.Features.CollectionScheduleFeatures
     {
         public CreateCollectionScheduleCommandValidator()
         {
-            RuleFor(x => x.IdRoute)
+            RuleFor(x => x.RouteId)
                 .NotEmpty().WithMessage("{PropertyName} no puede estar empty.");
 
             RuleFor(x => x.Weekday)

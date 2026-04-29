@@ -6,7 +6,7 @@ namespace RutaLimpiaBackend.Core.Application.Features.RouteFeatures.Commands.Cre
     {
         public CreateRouteCommandValidator()
         {
-            RuleFor(x => x.IdSector)
+            RuleFor(x => x.SectorId)
                 .NotEmpty().WithMessage("{PropertyName} no puede estar empty.");
 
             RuleFor(x => x.Number)

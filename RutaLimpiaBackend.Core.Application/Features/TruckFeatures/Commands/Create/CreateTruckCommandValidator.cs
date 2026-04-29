@@ -6,7 +6,7 @@ namespace RutaLimpiaBackend.Core.Application.Features.TruckFeatures.Commands.Cre
     {
         public CreateTruckCommandValidator()
         {
-            RuleFor(x => x.IdRoute)
+            RuleFor(x => x.RouteId)
                 .NotEmpty().WithMessage("{PropertyName} no puede estar empty.");
 
             RuleFor(x => x.LicensePlate)
