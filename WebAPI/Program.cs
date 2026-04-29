@@ -7,6 +7,7 @@ using RutaLimpiaBackend.Infrastructure.Persistence;
 using RutaLimpiaBackend.Infrastructure.Persistence.Contexts;
 using RutaLimpiaBackend.Infrastructure.Shared;
 using WebAPI.Extensions;
+using WebAPI.Hubs;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -15,6 +16,7 @@ builder.Services.AddPersistenceInfrastructure(builder.Configuration);
 builder.Services.AddSharedInfrastructure(builder.Configuration);
 builder.Services.AddApiVersioningExtension();
 builder.Services.AddIdentityInfrastructure(builder.Configuration);
+builder.Services.AddSignalR();
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
@@ -66,5 +68,7 @@ using (var scope = app.Services.CreateScope())
         Console.WriteLine($"Ocurrió un error al insertar los datos base: {ex.Message}");
     }
 }
+
+app.MapHub<TrackingHub>("/trackingHub");
 
 app.Run();
