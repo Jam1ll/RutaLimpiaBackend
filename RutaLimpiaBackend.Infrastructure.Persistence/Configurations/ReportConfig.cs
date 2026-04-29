@@ -25,10 +25,6 @@ namespace RutaLimpiaBackend.Infrastructure.Persistence.Configurations
             #endregion
 
             #region RELATIONSHIPS
-            builder.HasOne(x => x.Route)
-                   .WithMany()
-                   .HasForeignKey(x => x.RouteId)
-                   .OnDelete(DeleteBehavior.Restrict);
 
             builder.HasOne(x => x.Sector)
                    .WithMany()
