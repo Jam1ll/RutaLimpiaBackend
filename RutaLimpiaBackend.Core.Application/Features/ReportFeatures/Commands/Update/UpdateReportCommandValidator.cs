@@ -31,9 +31,6 @@ namespace RutaLimpiaBackend.Core.Application.Features.ReportFeatures.Commands.Up
             RuleFor(x => x.UserId)
                 .NotEmpty().WithMessage("{PropertyName} no puede estar empty.");
 
-            RuleFor(x => x.RouteId)
-                .NotEmpty().WithMessage("{PropertyName} no puede estar empty.");
-
             RuleFor(x => x.SectorId)
                 .NotEmpty().WithMessage("{PropertyName} no puede estar empty.");
 

@@ -57,7 +57,8 @@ namespace WebAPI.Account.Auth
                 Token = token,
                 UserId = user.Id,
                 Name = user.Name,
-                Roles = roles
+                Roles = roles,
+                SectorId = user.SectorId,
             });
         }
 

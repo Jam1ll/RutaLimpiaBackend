@@ -8,11 +8,15 @@ namespace WebAPI.Hubs
         //CITIZEN 
         public async Task JoinRouteGroup(string routeId)
         {
+            if (string.IsNullOrWhiteSpace(routeId))
+                return;
             await Groups.AddToGroupAsync(Context.ConnectionId, routeId);
         }
 
         public async Task LeaveRouteGroup(string routeId)
         {
+            if (string.IsNullOrWhiteSpace(routeId))
+                return; 
             await Groups.RemoveFromGroupAsync(Context.ConnectionId, routeId);
         }
 

@@ -15,7 +15,6 @@ namespace RutaLimpiaBackend.Core.Application.Features.ReportFeatures.Commands.Cr
         public ReportType ReportType { get; set; }
         public ReportState ReportState { get; set; }
         public Guid UserId { get; set; }
-        public Guid RouteId { get; set; }
         public Guid SectorId { get; set; }
     }
 }
