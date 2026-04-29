@@ -32,4 +32,8 @@
     <ProjectReference Include="..\RutaLimpiaBackend.Infrastructure.Shared\RutaLimpiaBackend.Infrastructure.Shared.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\RutaLimpiaBackend.Core.Application\RutaLimpiaBackend.Core.Application.csproj" />
+  </ItemGroup>
+
 </Project>
