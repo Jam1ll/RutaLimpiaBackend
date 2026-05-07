@@ -15,7 +15,6 @@ namespace RutaLimpiaBackend.Infrastructure.Persistence.Configurations
             builder.Property(x => x.Id).IsRequired();
             builder.Property(x => x.Title).HasMaxLength(250).IsRequired();
             builder.Property(x => x.Description).HasMaxLength(1000).IsRequired();
-            builder.Property(x => x.PhotoUrl).HasMaxLength(500).IsRequired();
             builder.Property(x => x.DirectionReference).HasMaxLength(500).IsRequired();
             builder.Property(x => x.Latitude).HasColumnType("decimal(18,8)").IsRequired();
             builder.Property(x => x.Longitude).HasColumnType("decimal(18,8)").IsRequired();

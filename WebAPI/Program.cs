@@ -7,6 +7,7 @@ using RutaLimpiaBackend.Infrastructure.Persistence;
 using RutaLimpiaBackend.Infrastructure.Persistence.Contexts;
 using RutaLimpiaBackend.Infrastructure.Shared;
 using WebAPI.Extensions;
+using WebAPI.Hubs;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -24,11 +25,14 @@ builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAll", policy =>
     {
-        policy.AllowAnyOrigin()
+        policy.SetIsOriginAllowed(_ => true)
               .AllowAnyMethod()
-              .AllowAnyHeader();
+              .AllowAnyHeader()
+              .AllowCredentials();
     });
 });
+
+builder.Services.AddSignalR();
 
 builder.Services.AddHttpContextAccessor();
 
@@ -46,7 +50,8 @@ app.UseAuthorization();
 app.UseErrorHandlingMiddleware();
 
 app.MapControllers();
-
+app.UseStaticFiles();
+app.MapHub<TrackingHub>("/trackingHub");
 using (var scope = app.Services.CreateScope())
 {
     var services = scope.ServiceProvider;
