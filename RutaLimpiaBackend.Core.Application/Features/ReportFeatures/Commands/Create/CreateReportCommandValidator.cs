@@ -14,10 +14,6 @@ namespace RutaLimpiaBackend.Core.Application.Features.ReportFeatures.Commands.Cr
                 .NotNull().WithMessage("{PropertyName} no puede ser null.")
                 .NotEmpty().WithMessage("{PropertyName} no puede estar empty.");
 
-            RuleFor(x => x.PhotoUrl)
-                .NotNull().WithMessage("{PropertyName} no puede ser null.")
-                .NotEmpty().WithMessage("{PropertyName} no puede estar empty.");
-
             RuleFor(x => x.DirectionReference)
                 .NotNull().WithMessage("{PropertyName} no puede ser null.")
                 .NotEmpty().WithMessage("{PropertyName} no puede estar empty.");

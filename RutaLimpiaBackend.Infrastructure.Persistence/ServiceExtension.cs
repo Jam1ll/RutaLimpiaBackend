@@ -4,6 +4,7 @@ using Microsoft.Extensions.DependencyInjection;
 using RutaLimpiaBackend.Core.Application.Interfaces;
 using RutaLimpiaBackend.Infrastructure.Persistence.Contexts;
 using RutaLimpiaBackend.Infrastructure.Persistence.Repositories;
+using RutaLimpiaBackend.Infrastructure.Services;
 
 namespace RutaLimpiaBackend.Infrastructure.Persistence
 {
@@ -20,6 +21,12 @@ namespace RutaLimpiaBackend.Infrastructure.Persistence
 
             services.AddTransient(typeof(IRepositoryAsync<>), typeof(RepositoryAsync<>));
             services.AddTransient(typeof(IReadRepositoryAsync<>), typeof(ReadRepositoryAsync<>));
+
+            #endregion
+
+            #region Services
+
+            services.AddTransient<IFileUploadService, LocalFileUploadService>();
 
             #endregion
         }

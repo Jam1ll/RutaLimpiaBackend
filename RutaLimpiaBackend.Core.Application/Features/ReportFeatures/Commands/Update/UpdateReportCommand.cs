@@ -1,4 +1,5 @@
-﻿using RutaLimpiaBackend.Core.Application.Interfaces.CommonHandlers;
+﻿using Microsoft.AspNetCore.Http;
+using RutaLimpiaBackend.Core.Application.Interfaces.CommonHandlers;
 using RutaLimpiaBackend.Core.Domain.Entities.Enums;
 
 namespace RutaLimpiaBackend.Core.Application.Features.ReportFeatures.Commands.Update
@@ -8,7 +9,7 @@ namespace RutaLimpiaBackend.Core.Application.Features.ReportFeatures.Commands.Up
         public Guid Id { get; set; }
         public required string Title { get; set; }
         public required string Description { get; set; }
-        public required string PhotoUrl { get; set; }
+        public required IFormFile Photo { get; set; }
         public required string DirectionReference { get; set; }
         public required decimal Latitude { get; set; }
         public required decimal Longitude { get; set; }
